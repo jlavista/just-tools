@@ -1,0 +1,62 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #19263d;
+  background: #f5f7fb;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+.page { width: min(100% - 48px, 1000px); margin: 0 auto; padding: 38px 0 24px; }
+.brand { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 19px; font-weight: 750; letter-spacing: -.5px; }
+.brand-icon { display: grid; place-items: center; flex-shrink: 0; width: 34px; height: 34px; border-radius: 10px; background: #233c35; color: #b7f5d3; }
+.brand-icon svg { width: 23px; height: 23px; }
+.brand-note { margin-left: auto; font-size: 9px; letter-spacing: 1.5px; color: #6a7587; }
+.brand-tagline { flex-basis: 100%; margin: 0; font-size: 13px; font-weight: 400; letter-spacing: 0; line-height: 1.7; color: #647085; }
+.intro { margin: 58px 0 44px; }
+.eyebrow, .step { font-size: 11px; font-weight: 750; letter-spacing: 1.8px; color: #526c64; }
+h1 { font-size: clamp(40px, 6vw, 62px); line-height: 1.08; letter-spacing: -2.8px; margin: 18px 0; font-weight: 750; }
+h1 span { color: #43826b; }
+.intro > p:last-child { color: #647085; font-size: 17px; line-height: 1.7; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; }
+.section-heading h2 { font-size: 17px; letter-spacing: -.4px; margin: 0; font-weight: 650; }
+.badge { font-size: 9px; font-weight: 750; letter-spacing: 1px; color: #426957; background: #e6f3eb; border-radius: 5px; padding: 7px 9px; }
+.tool-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.tool-card { display: flex; flex-direction: column; min-width: 0; padding: 32px; background: white; border: 1px solid #e0e6ec; border-radius: 20px; box-shadow: 0 12px 36px #19263d06; color: inherit; text-decoration: none; transition: border-color .15s, background .15s; }
+.tool-card:hover { border-color: #91bba4; background: #fcfefc; }
+.tool-top { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.tool-icon { display: grid; place-items: center; flex-shrink: 0; width: 46px; height: 46px; background: #edf5f0; color: #386d57; border-radius: 13px; }
+.tool-icon svg { width: 27px; height: 27px; }
+.step { font-size: 10px; letter-spacing: 1.4px; }
+.tool-card h3 { font-size: 25px; letter-spacing: -.8px; margin: 24px 0 12px; }
+.tool-card p { font-size: 14px; color: #6a7587; line-height: 1.8; margin: 0 0 22px; }
+.tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 28px; }
+.tags span { padding: 5px 9px; font-size: 10px; color: #526c64; background: #f1f5f3; border-radius: 5px; }
+.tool-cta { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: auto; padding-top: 20px; border-top: 1px solid #edf0f4; color: #284d3f; font-size: 13px; font-weight: 650; }
+.tool-cta > span { font-size: 22px; line-height: 1; }
+.tool-card:hover .tool-cta { text-decoration: underline; text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid #a8d9c1; outline-offset: 4px; }
+.promise { display: flex; gap: 16px; align-items: flex-start; padding: 26px 28px; margin-top: 28px; border: 1px solid #e0e8e2; border-radius: 15px; background: #edf5f080; }
+.privacy-icon { flex-shrink: 0; color: #43826b; margin-top: 2px; }
+.privacy-icon svg { width: 24px; height: 24px; }
+.promise h2 { font-size: 14px; color: #42584f; font-weight: 650; margin: 0 0 7px; }
+.promise p { font-size: 12px; line-height: 1.8; color: #6a7587; margin: 0; }
+footer { text-align: center; color: #737f91; font-size: 12px; padding: 28px 0 0; line-height: 1.8; }
+footer a { display: block; margin-top: 8px; color: #386d57; text-underline-offset: 3px; }
+footer a:hover { color: #1c3a2e; }
+footer a:focus-visible { border-radius: 4px; }
+
+@media (max-width: 700px) {
+  .page { width: min(100% - 32px, 480px); padding-top: 24px; }
+  .brand-note { display: none; }
+  .intro { margin: 40px 0 32px; }
+  h1 { letter-spacing: -1.8px; }
+  .tool-grid { grid-template-columns: 1fr; gap: 16px; }
+  .tool-card { padding: 26px 24px; }
+  .promise { padding: 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tool-card { transition: none; }
+}

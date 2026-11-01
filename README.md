@@ -1,0 +1,34 @@
+# JustTools
+
+100% free, No ads, all happen on the browsers, 100% private, No uploads. No tricks. Just tools.
+
+The home page for a growing collection of free, browser-only tools.
+
+**Website:** https://jlavista.github.io/just-tools/
+
+## Tools
+
+| Tool | Description | Website | Source |
+|---|---|---|---|
+| PDF Manager | Merge, split, reorder, and rotate PDFs; convert images to PDF pages. | [Open tool](https://jlavista.github.io/pdf-manager/) | [Repository](https://github.com/jlavista/pdf-manager) |
+| QR Code Generator | Turn links into QR codes and download PNG or SVG files. | [Open tool](https://jlavista.github.io/qr-code/) | [Repository](https://github.com/jlavista/qr-code) |
+
+The directory is static HTML and CSS: no JavaScript, dependencies, build step, accounts, or analytics. The linked tools process documents and links locally in the browser. GitHub Pages receives ordinary website and asset requests, but the tools do not upload user documents or links.
+
+## Add a tool
+
+Add a new `.tool-card` link inside `.tool-grid` in `index.html`, with a unique heading and description ID, a short description, its supported formats, and its website URL. Update the tool count in `.badge` and the table above. Follow the existing cards for consistent styling and accessibility.
+
+## Run locally
+
+Serve this directory with any static web server:
+
+```powershell
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+Open `http://localhost:8000`. The directory also works without JavaScript.
+
+## GitHub Pages
+
+In **Settings > Pages**, deploy from the `main` branch and **/ (root)**. Keep `index.html`, `styles.css`, `icon.svg`, and `.nojekyll` in the repository root. Asset paths are relative, so the site works under `/just-tools/`.
