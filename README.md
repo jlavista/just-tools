@@ -12,10 +12,11 @@ The home page for a growing collection of free, browser-only tools.
 |---|---|---|---|
 | PDF Manager | Merge, split, reorder, and rotate PDFs; convert images to PDF pages. | [Open tool](https://jlavista.github.io/pdf-manager/) | [Repository](https://github.com/jlavista/pdf-manager) |
 | QR Code Generator | Turn links into QR codes and download PNG or SVG files. | [Open tool](https://jlavista.github.io/qr-code/) | [Repository](https://github.com/jlavista/qr-code) |
+| Voice Tools | Record, split, cut, join, and export audio; transcribe speech on the device. | [Open tool](https://jlavista.github.io/voice-tools/) | [Repository](https://github.com/jlavista/voice-tools) |
 
-The directory is static HTML and CSS with no application dependencies, build step, or accounts. A Cloudflare Web Analytics script provides cookie-free traffic and performance statistics, disclosed in the footer. The directory works without JavaScript or when analytics is blocked. The linked tools process documents and links locally in the browser.
+The directory is static HTML and CSS with no application dependencies, build step, or accounts. A Cloudflare Web Analytics script provides cookie-free traffic and performance statistics, disclosed in the footer. The directory works without JavaScript or when analytics is blocked. The linked tools process documents, links, and audio locally in the browser. Voice Tools downloads a speech model on first transcription use, after permission; recordings and transcripts remain on the device.
 
-Analytics sends ordinary page-traffic and performance data to Cloudflare, not document contents, filenames, form values, or URLs entered into the QR generator. The public beacon token is shared across `/just-tools/`, `/pdf-manager/`, and `/qr-code/` under `jlavista.github.io`; use the page-path breakdown in Cloudflare to compare tools. GitHub Pages also receives ordinary website and asset requests. "No uploads" refers to user documents and entered links, not analytics requests.
+Analytics sends ordinary page-traffic and performance data to Cloudflare, not document contents, filenames, form values, URLs entered into the QR generator, audio, or transcripts. The public beacon token is shared across `/just-tools/`, `/pdf-manager/`, `/qr-code/`, and `/voice-tools/` under `jlavista.github.io`; use the page-path breakdown in Cloudflare to compare tools. GitHub Pages also receives ordinary website and asset requests. "No uploads" refers to user files and entered links, not analytics requests or model downloads.
 
 ## Add a tool
 
